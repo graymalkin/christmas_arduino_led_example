@@ -1,4 +1,5 @@
 #include <arduino.h>
+#include <string.h>
 
 #define HO_HO_HO "HO! HO! HO!"
 #define MERRY_CHRISTMAS "Merry Christmas!"
@@ -22,13 +23,13 @@ void setup() {
 void loop() {
   while(Serial.available() > 0){
     String line = Serial.readStringUntil('\n');
-    if(line.equals("HO! HO! HO!")){
+    if(strcmp(line.c_str(), "HO! HO! HO!") == 0){
       ho_ho_ho();
     }
-    else if(line.equals("Merry Christmas!")){
+    else if(strcmp(line.c_str(), "Merry Christmas!") == 0){
       merry_christmas();
     }
-    else if(line.equals("Happy New Year!")){
+    else if(strcmp(line.c_str(), "Happy New Year!") == 0){
       happy_new_year();
     }
   }
