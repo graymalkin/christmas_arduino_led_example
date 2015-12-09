@@ -1,9 +1,9 @@
 #ifndef __christmas_h_
 #define __christmas_h_
 
-#define HO_HO_HO "HO! HO! HO!"
-#define MERRY_CHRISTMAS "Merry Christmas!"
-#define HAPPY_NEW_YEAR "Happy New Year!"
+#define HO_HO_HO "HO! HO! HO!\n"
+#define MERRY_CHRISTMAS "Merry Christmas!\n"
+#define HAPPY_NEW_YEAR "Happy New Year!\n"
 
 void initialise();
 void tick();
