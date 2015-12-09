@@ -16,8 +16,7 @@ void happy_new_year();
 
 void setup() {
   initialise();
-  Serial.begin(9600);
-  
+  Serial.begin(115200);
 }
 
 void loop() {
@@ -34,5 +33,6 @@ void loop() {
     }
   }
   delay(1000);
-  tick();
+
+  // tick();
 }
