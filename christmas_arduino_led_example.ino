@@ -33,19 +33,19 @@ void initialise(){
 void ho_ho_ho(){
   current_state = RAINBOW_CYCLE;
   
-  Serial.println(MERRY_CHRISTMAS);
+  Serial.print(MERRY_CHRISTMAS);
 }
 
 void merry_christmas(){
   current_state = RAINBOW;
   
-  Serial.println(HAPPY_NEW_YEAR);
+  Serial.print(HAPPY_NEW_YEAR);
 }
 
 void happy_new_year(){
   current_state = OFF;
 
-  Serial.println(HO_HO_HO);
+  Serial.print(HO_HO_HO);
 }
 
 // Called once every second for you to update your display
@@ -101,3 +101,4 @@ uint32_t Wheel(byte WheelPos) {
   WheelPos -= 170;
   return strip.Color(WheelPos * 3, 255 - WheelPos * 3, 0);
 }
+
