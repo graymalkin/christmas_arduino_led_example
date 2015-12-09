@@ -22,17 +22,17 @@ void initialise(){
 //These methods are called when HO_HO_HO, MERRY_CHRISTMASS and HAPPY_NEW_YEAR are received over serial
 void ho_ho_ho(){
   is_red_on = !is_red_on;
-  Serial.println(MERRY_CHRISTMAS);
+  Serial.print(MERRY_CHRISTMAS);
 }
 
 void merry_christmas(){
   is_green_on = !is_green_on;
-  Serial.println(HAPPY_NEW_YEAR);
+  Serial.print(HAPPY_NEW_YEAR);
 }
 
 void happy_new_year(){
   is_blue_on = !is_blue_on;
-  Serial.println(HO_HO_HO);
+  Serial.print(HO_HO_HO);
 }
 
 // Turns the led at the specified pin to on or off
